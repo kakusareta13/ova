@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💗 Пиксельная любовь 💗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Затемнение для эффекта появления -->
+        <div class="scanlines"></div>
+        
+        <!-- Контейнер для пиксельных сердечек (дождь) -->
+        <div id="pixelHearts"></div>
+        
+        <!-- Основной холст -->
+        <canvas id="gameCanvas"></canvas>
+        
+        <!-- Пиксельные сообщения -->
+        <div id="message1" class="pixel-message message-top">ТЫ МОЯ ВСЕЛЕННАЯ JALAP</div>
+        <div id="message2" class="pixel-message message-right">LOVE YOU 3000</div>
+        <div id="message3" class="pixel-message message-bottom">SUMAYA JONI MA</div>
+        <div id="message4" class="pixel-message message-left">МОЁ СЕРДЦЕ</div>
+        <div id="message5" class="pixel-message message-center">💗 4EVER 💗</div>
+        
+        <!-- Кнопка перезапуска -->
+        <button id="restartBtn" class="pixel-btn">НОВАЯ ИГРА</button>
+    </div>
+
+    <!-- Подключаем JavaScript файлы по очереди -->
+    <script src="config.js"></script>
+    <script src="pixelheart.js"></script>
+    <script src="tree.js"></script>
+    <script src="messages.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
